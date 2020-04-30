@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lohith's Fitness Club</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap" rel="stylesheet">
+<style>
+    body {
+        margin: 0px;
+        color: white;
+        padding: 0px;
+        background: url('gym.jpg');
+        font-family: 'Baloo Bhaina 2', cursive;
+    }
+
+    .left{
+        display: inline-block;
+        position: relative;
+        left: 34px;
+        top: 2px;
+        width: 80px;
+        font-size: 8px;
+
+    }
+     
+    .mid{
+        display:block;
+        position: absolute;
+        margin: -3px 624px;
+        width: 33%;
+        top: 12px;
+    }
+ 
+    .right{
+        position:absolute;
+        right: 34px;
+        top: 12px;
+        display: inline-block;
+     }
+
+    .navbar{
+         display: inline-block;
+     }
+
+    .navbar li{
+         display: inline-block;
+     }
+
+     .navbar li a{
+         color: white;
+         text-decoration: none;
+         padding: 5px 5px;
+     }
+
+     .navbar li a:hover{
+        color:grey;
+         text-decoration: underline;
+     }
+
+     .left img{
+        display: inline-block;
+        width: 100%;
+         
+     }
+
+     .btn{
+         background-color:black;
+         color: white;
+         width: 0px 20px;
+         padding: 0px 31px;
+         border: 2px solid gray;
+         border-radius: 10px;
+         cursor: pointer;
+         font-family: 'Baloo Bhaina 2', cursive;
+     }
+
+     .btn:hover{
+         color: gray;
+     }
+
+     #left_logo_text{
+         text-align: center;
+         font-size: 10px;
+     }
+
+     .container{
+        display:inline-block;
+        margin: 129px 780px;
+        width: 250px;
+        padding: 94px 211px;
+        border-radius: 10px;
+        border:2px solid white
+     }
+
+     .container h1{
+         font-size: 33px;
+         position: absolute;
+         top: 10px;
+         padding: 10px 10px;
+         margin: 238px -164px;
+     }
+
+     .form-group input{
+         display: inline-block;
+         border-radius: 10px;
+         margin: 10px,10px;
+         padding: 5px 80px;
+         font-size: 12px;
+         text-align: center;
+     }
+
+     #btn_form{
+        background-color:black;
+         color: white;
+         width: 0px 20px;
+         padding: 0px 131px;
+         border: 2px solid gray;
+         border-radius: 10px;
+         cursor: pointer;
+         font-family: 'Baloo Bhaina 2', cursive;
+     }
+
+
+</style>
+<body>
+    <header class="header"></header>
+    <!-- left box for logo -->
+    <div class="left">
+        <img src="logo.jpg" alt="Not Found">
+        <div id="left_logo_text">Lohith's Fitness</div>
+    </div>
+    <!-- mid box for navbar -->
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="#" class="active" >Home</a></li>
+            <li><a href="#" >About Us</a></li>
+            <li><a href="#" >Fitness Calculator</a></li>
+            <li><a href="#" >Contact Us</a></li>
+        </ul>
+    </div>
+    <!-- right box for buttons -->
+    <div class="right">
+    <button class="btn">Call us now</button>
+    <button class="btn">Email Us</button>
+    </div>
+
+    <div class="container">
+        <h1>Join the best fitness center in Bangalore</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+                <input type="text" name="" placeholder="Enter your Gender">
+                <input type="text" name="" placeholder="Enter your Age">
+                <input type="text" name="" placeholder="Enter your Locality">
+                <br><button type="submit" id="btn_form">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
